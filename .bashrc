@@ -24,3 +24,11 @@ alias l='ls -alhF --group-directories-first'
 #bindkey "ee[C" forward-word
 #bindkey "ee[D" backward-word
 #bindkey "^H" backward-delete-word
+
+## For server and new user
+# sudo sh -c 'echo -1 >/proc/sys/kernel/perf_event_paranoid'
+# sudo useradd -m -g grad -s /bin/bash -c "Zhen Peng" zpeng
+# sudo groupadd grad
+# sudo usermod -c "Zhen Peng" -g grad zpeng
+# sudo usermod -aG sudo zpeng
+# sudo chown zpeng:grad /scratch/zpeng
